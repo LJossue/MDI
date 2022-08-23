@@ -121,7 +121,7 @@
             this.productosToolStripMenuItem.BackColor = System.Drawing.Color.SeaGreen;
             this.productosToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
@@ -130,7 +130,7 @@
             this.clientesToolStripMenuItem.BackColor = System.Drawing.Color.SeaGreen;
             this.clientesToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // facturarToolStripMenuItem
@@ -138,7 +138,7 @@
             this.facturarToolStripMenuItem.BackColor = System.Drawing.Color.SeaGreen;
             this.facturarToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.facturarToolStripMenuItem.Name = "facturarToolStripMenuItem";
-            this.facturarToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.facturarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.facturarToolStripMenuItem.Text = "Facturar";
             // 
             // inventarioToolStripMenuItem
@@ -146,7 +146,7 @@
             this.inventarioToolStripMenuItem.BackColor = System.Drawing.Color.SeaGreen;
             this.inventarioToolStripMenuItem.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             // 
             // panel2

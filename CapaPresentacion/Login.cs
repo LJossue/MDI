@@ -55,5 +55,21 @@ namespace CapaPresentacion
 
         }
 
+        //private bool ValidarCampos()
+        //{
+        //    bool validar = true;
+        //    if (textemail.Text == "")
+        //    {
+        //        validar = false;
+        //        errorProvider1.SetError(textemail, "Digite su correo electronico");
+        //    }
+        //    if (textpassword.Text == "")
+        //    {
+        //        validar = false;
+        //        errorProvider1.SetError(textpassword, "Digite su contraseña");
+        //    }
+        //    return validar;
+        //}
+
     }
 }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leand\\source\\repos\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {}
+    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leand\\source\\repos\\Solution1\\CapaEntidad\\CapaEntidad.csproj": {
+    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\Solution1\\CapaEntidad\\CapaEntidad.csproj",
+        "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj",
         "projectName": "CapaEntidad",
-        "projectPath": "C:\\Users\\leand\\source\\repos\\Solution1\\CapaEntidad\\CapaEntidad.csproj",
-        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leand\\source\\repos\\Solution1\\CapaEntidad\\obj\\",
+        "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj",
+        "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaEntidad\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.TitleBar = new System.Windows.Forms.Panel();
             this.btnminus = new System.Windows.Forms.PictureBox();
@@ -39,10 +40,12 @@
             this.textemail = new System.Windows.Forms.TextBox();
             this.textpassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // TitleBar
@@ -120,6 +123,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(123, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 19);
@@ -141,6 +145,7 @@
             this.textpassword.BackColor = System.Drawing.Color.LightCyan;
             this.textpassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textpassword.ForeColor = System.Drawing.Color.SeaGreen;
+            this.textpassword.HideSelection = false;
             this.textpassword.Location = new System.Drawing.Point(123, 246);
             this.textpassword.Name = "textpassword";
             this.textpassword.Size = new System.Drawing.Size(229, 26);
@@ -151,11 +156,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
             this.label2.Location = new System.Drawing.Point(123, 220);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 19);
             this.label2.TabIndex = 6;
             this.label2.Text = "Contraseña";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Login
             // 
@@ -182,6 +192,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnminus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +210,6 @@
         private TextBox textemail;
         private TextBox textpassword;
         private Label label2;
+        private ErrorProvider errorProvider1;
     }
 }

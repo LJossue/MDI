@@ -25,7 +25,7 @@ namespace CapaPresentacion
             my = e.Y;
         }
 
-        
+
 
         private void TitleBar_MouseMove(object sender, MouseEventArgs e)
         {
@@ -35,7 +35,7 @@ namespace CapaPresentacion
             }
         }
 
-        
+
 
         private void TitleBar_MouseUp(object sender, MouseEventArgs e)
         {
@@ -44,8 +44,10 @@ namespace CapaPresentacion
 
         private void Productos_Load(object sender, EventArgs e)
         {
-           
+
         }
+
+
 
         private void btnminus_Click(object sender, EventArgs e)
         {
@@ -54,6 +56,43 @@ namespace CapaPresentacion
         private void btnclose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonIngresar_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new IngresarProducto());
+        }
+
+        private void buttonConsultar_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ConsultarProducto());
+        }
+
+        private void buttonModificar_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ModificarProducto());
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new EliminarProducto());
+        }
+
+        private Form activeform = null;
+        private void OpenChildForm(Form ChildForm)
+        {
+            if(activeform != null)
+            
+                activeform.Close();
+                activeform = ChildForm;
+                    ChildForm.TopLevel = false;
+                    ChildForm.FormBorderStyle = FormBorderStyle.None;
+                ChildForm.Dock = DockStyle.Fill;
+                panelChildForm.Controls.Add(ChildForm);
+                panelChildForm.Tag = ChildForm;
+                ChildForm.BringToFront();
+                ChildForm.Show();
+            
         }
     }
 }
