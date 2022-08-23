@@ -49,27 +49,42 @@ namespace CapaPresentacion
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MDI mdi = new MDI();
-            mdi.Show();
+           ValidarCampos();
 
         }
 
-        //private bool ValidarCampos()
-        //{
-        //    bool validar = true;
-        //    if (textemail.Text == "")
-        //    {
-        //        validar = false;
-        //        errorProvider1.SetError(textemail, "Digite su correo electronico");
-        //    }
-        //    if (textpassword.Text == "")
-        //    {
-        //        validar = false;
-        //        errorProvider1.SetError(textpassword, "Digite su contraseña");
-        //    }
-        //    return validar;
-        //}
+        private bool ValidarCampos()
+        {
+            bool validar = true;
+            if (textemail.Text == "")
+            {
+                validar = false;
+                errorProvider1.SetError(textemail, "Digite su correo electronico");
+            }
+            else if (textemail.Text != "a")
+            {
+                validar = false;
+                errorProvider1.SetError(textemail, "Correo electronico incorrecto");
+            }
+            if (textpassword.Text == "")
+            {
+                validar = false;
+                errorProvider1.SetError(textpassword, "Digite su contraseña");
+            }
+            else if (textpassword.Text != "a")
+            {
+                validar = false;
+                errorProvider1.SetError(textpassword, "Contraseña invalida");
+            }
+            if (textemail.Text == "a" && textpassword.Text == "a")
+            {
+                this.Hide();
+                MDI mdi = new MDI();
+                mdi.Show();
+            }
+
+            return validar;
+        }
 
     }
 }
