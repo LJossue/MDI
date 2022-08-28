@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj": {}
+    "C:\\Users\\leand\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj": {
+    "C:\\Users\\leand\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj",
         "projectName": "CapaDatos",
-        "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj",
-        "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaDatos\\obj\\",
+        "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj",
+        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaDatos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
               }
             }
           }
@@ -43,6 +47,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.30, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,21 +71,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
+    "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj",
         "projectName": "CapaEntidad",
-        "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj",
-        "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaEntidad\\obj\\",
+        "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj",
+        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,21 +132,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj": {
+    "C:\\Users\\leand\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj",
         "projectName": "CapaNegocio",
-        "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj",
-        "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaNegocio\\obj\\",
+        "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj",
+        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaNegocio\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,11 +164,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Sena\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj": {
-                "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj"
+              "C:\\Users\\leand\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj": {
+                "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaDatos\\CapaDatos.csproj"
               },
-              "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
               }
             }
           }
@@ -182,21 +200,25 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Sena\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj": {
+    "C:\\Users\\leand\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj",
         "projectName": "CapaPresentacion",
-        "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj",
-        "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaPresentacion\\obj\\",
+        "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaPresentacion\\CapaPresentacion.csproj",
+        "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaPresentacion\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,11 +232,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
-                "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
+              "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
               },
-              "C:\\Users\\Sena\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj": {
-                "projectPath": "C:\\Users\\Sena\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj"
+              "C:\\Users\\leand\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj": {
+                "projectPath": "C:\\Users\\leand\\source\\repos\\MDI\\CapaNegocio\\CapaNegocio.csproj"
               }
             }
           }
@@ -246,7 +268,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

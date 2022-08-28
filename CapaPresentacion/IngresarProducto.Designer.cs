@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textemail = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonIngresar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textemail
+            // txtCodigo
             // 
-            this.textemail.BackColor = System.Drawing.Color.LightCyan;
-            this.textemail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textemail.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textemail.Location = new System.Drawing.Point(247, 52);
-            this.textemail.Name = "textemail";
-            this.textemail.Size = new System.Drawing.Size(364, 26);
-            this.textemail.TabIndex = 7;
+            this.txtCodigo.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodigo.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtCodigo.Location = new System.Drawing.Point(247, 52);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(364, 26);
+            this.txtCodigo.TabIndex = 7;
             // 
             // label1
             // 
@@ -62,15 +62,15 @@
             this.label1.Text = "Código:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtDescripcion
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox1.Location = new System.Drawing.Point(247, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(364, 26);
-            this.textBox1.TabIndex = 9;
+            this.txtDescripcion.BackColor = System.Drawing.Color.LightCyan;
+            this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDescripcion.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtDescripcion.Location = new System.Drawing.Point(247, 90);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(364, 26);
+            this.txtDescripcion.TabIndex = 9;
             // 
             // label2
             // 
@@ -83,15 +83,15 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Descripción:";
             // 
-            // textBox2
+            // txtValor
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox2.Location = new System.Drawing.Point(247, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(364, 26);
-            this.textBox2.TabIndex = 11;
+            this.txtValor.BackColor = System.Drawing.Color.LightCyan;
+            this.txtValor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtValor.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtValor.Location = new System.Drawing.Point(247, 127);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(364, 26);
+            this.txtValor.TabIndex = 11;
             // 
             // label3
             // 
@@ -104,15 +104,15 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Valor:";
             // 
-            // textBox3
+            // txtCantidad
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox3.Location = new System.Drawing.Point(247, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(364, 26);
-            this.textBox3.TabIndex = 13;
+            this.txtCantidad.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCantidad.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtCantidad.Location = new System.Drawing.Point(247, 165);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(364, 26);
+            this.txtCantidad.TabIndex = 13;
             // 
             // label4
             // 
@@ -137,6 +137,7 @@
             this.buttonIngresar.TabIndex = 14;
             this.buttonIngresar.Text = "Guardar";
             this.buttonIngresar.UseVisualStyleBackColor = true;
+            this.buttonIngresar.Click += new System.EventHandler(this.buttonIngresar_Click);
             // 
             // button1
             // 
@@ -150,6 +151,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // IngresarProducto
             // 
@@ -159,13 +161,13 @@
             this.ClientSize = new System.Drawing.Size(776, 290);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textemail);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IngresarProducto";
@@ -177,13 +179,13 @@
 
         #endregion
 
-        private TextBox textemail;
+        private TextBox txtCodigo;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtDescripcion;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtValor;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtCantidad;
         private Label label4;
         private Button buttonIngresar;
         private Button button1;

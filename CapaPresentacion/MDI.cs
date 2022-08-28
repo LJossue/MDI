@@ -13,6 +13,9 @@ namespace CapaPresentacion
     public partial class MDI : Form
     {
         private Productos productos;
+        private Clientes clientes;
+        private Facturar facturar;
+        private Inventario inventario;
         public MDI()
         {
             InitializeComponent();
@@ -57,6 +60,37 @@ namespace CapaPresentacion
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clientes = new Clientes();
+            clientes.MdiParent = this;
+
+
+            
+            clientes.Show();
+
+        }
+
+        private void facturarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            facturar = new Facturar();
+            facturar.MdiParent = this;
+
+
+
+            facturar.Show();
+        }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inventario = new Inventario();
+            inventario.MdiParent = this;
+
+
+
+            inventario.Show();
         }
 
         private void btnminus_Click(object sender, EventArgs e)

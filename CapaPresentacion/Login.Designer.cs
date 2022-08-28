@@ -111,6 +111,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.DarkSeaGreen;
             this.button1.Location = new System.Drawing.Point(132, 287);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(211, 42);

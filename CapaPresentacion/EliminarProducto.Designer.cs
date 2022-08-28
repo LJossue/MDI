@@ -30,10 +30,12 @@
         {
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonIngresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.LightCyan;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(254, 24);
             this.comboBox1.Name = "comboBox1";
@@ -51,12 +53,26 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Producto:";
             // 
+            // buttonIngresar
+            // 
+            this.buttonIngresar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonIngresar.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonIngresar.Location = new System.Drawing.Point(298, 65);
+            this.buttonIngresar.Name = "buttonIngresar";
+            this.buttonIngresar.Size = new System.Drawing.Size(188, 32);
+            this.buttonIngresar.TabIndex = 19;
+            this.buttonIngresar.Text = "Eliminar";
+            this.buttonIngresar.UseVisualStyleBackColor = true;
+            // 
             // EliminarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
+            this.Controls.Add(this.buttonIngresar);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -71,5 +87,6 @@
 
         private ComboBox comboBox1;
         private Label label1;
+        private Button buttonIngresar;
     }
 }

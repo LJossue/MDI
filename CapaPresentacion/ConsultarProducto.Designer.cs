@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox = new System.Windows.Forms.ComboBox();
             this.buttonIngresar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gridDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -46,13 +46,14 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Producto:";
             // 
-            // comboBox1
+            // comboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(252, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(362, 23);
-            this.comboBox1.TabIndex = 8;
+            this.comboBox.BackColor = System.Drawing.Color.LightCyan;
+            this.comboBox.FormattingEnabled = true;
+            this.comboBox.Location = new System.Drawing.Point(252, 20);
+            this.comboBox.Name = "comboBox";
+            this.comboBox.Size = new System.Drawing.Size(362, 23);
+            this.comboBox.TabIndex = 8;
             // 
             // buttonIngresar
             // 
@@ -67,29 +68,30 @@
             this.buttonIngresar.Text = "Consultar";
             this.buttonIngresar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // gridDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(154, 97);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(460, 173);
-            this.dataGridView1.TabIndex = 16;
+            this.gridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDatos.Location = new System.Drawing.Point(154, 97);
+            this.gridDatos.Name = "gridDatos";
+            this.gridDatos.RowTemplate.Height = 25;
+            this.gridDatos.Size = new System.Drawing.Size(460, 173);
+            this.gridDatos.TabIndex = 16;
             // 
-            // ConsultarProductos
+            // ConsultarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridDatos);
             this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ConsultarProductos";
+            this.Name = "ConsultarProducto";
             this.Text = "ConsultarProductos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ConsultarProducto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,8 +100,8 @@
         #endregion
 
         private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox comboBox;
         private Button buttonIngresar;
-        private DataGridView dataGridView1;
+        private DataGridView gridDatos;
     }
 }
