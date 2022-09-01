@@ -28,43 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonIngresar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.gridDatos = new System.Windows.Forms.DataGridView();
+            this.buttonConsulta = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtconsulta = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // gridDatos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(152, 97);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(460, 173);
-            this.dataGridView1.TabIndex = 20;
+            this.gridDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDatos.Location = new System.Drawing.Point(60, 97);
+            this.gridDatos.Name = "gridDatos";
+            this.gridDatos.RowTemplate.Height = 25;
+            this.gridDatos.Size = new System.Drawing.Size(650, 173);
+            this.gridDatos.TabIndex = 20;
             // 
-            // buttonIngresar
+            // buttonConsulta
             // 
-            this.buttonIngresar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonIngresar.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.Location = new System.Drawing.Point(285, 59);
-            this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(188, 32);
-            this.buttonIngresar.TabIndex = 19;
-            this.buttonIngresar.Text = "Consultar";
-            this.buttonIngresar.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(250, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(362, 23);
-            this.comboBox1.TabIndex = 18;
+            this.buttonConsulta.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConsulta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonConsulta.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonConsulta.Location = new System.Drawing.Point(285, 59);
+            this.buttonConsulta.Name = "buttonConsulta";
+            this.buttonConsulta.Size = new System.Drawing.Size(188, 32);
+            this.buttonConsulta.TabIndex = 19;
+            this.buttonConsulta.Text = "Consultar";
+            this.buttonConsulta.UseVisualStyleBackColor = true;
+            this.buttonConsulta.Click += new System.EventHandler(this.buttonConsulta_Click);
             // 
             // label1
             // 
@@ -77,20 +70,31 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Cliente:";
             // 
+            // txtconsulta
+            // 
+            this.txtconsulta.BackColor = System.Drawing.Color.LightCyan;
+            this.txtconsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtconsulta.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtconsulta.Location = new System.Drawing.Point(244, 17);
+            this.txtconsulta.Name = "txtconsulta";
+            this.txtconsulta.Size = new System.Drawing.Size(368, 26);
+            this.txtconsulta.TabIndex = 21;
+            // 
             // ConsultarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtconsulta);
+            this.Controls.Add(this.gridDatos);
+            this.Controls.Add(this.buttonConsulta);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConsultarCliente";
             this.Text = "ConsultarCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ConsultarCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,9 +102,9 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private Button buttonIngresar;
-        private ComboBox comboBox1;
+        private DataGridView gridDatos;
+        private Button buttonConsulta;
         private Label label1;
+        public TextBox txtconsulta;
     }
 }

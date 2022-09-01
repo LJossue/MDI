@@ -27,7 +27,7 @@ namespace CapaPresentacion
             ce.Documento = int.Parse(txtDocumento.Text);
             ce.Nombre = txtNombre.Text;
             ce.Direccion = txtDireccion.Text;
-            ce.Telefono = int.Parse(txtTelefono.Text);
+            ce.Telefono = long.Parse(txtTelefono.Text);
             ce.Correo = txtCorreo.Text;
             MessageBox.Show("Se ha ingresado el cliente.");
             cn.CrearCliente(ce);

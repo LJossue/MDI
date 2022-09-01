@@ -28,69 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonIngresar = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.gridDatos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textemail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonGuardar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(251, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(362, 23);
-            this.comboBox1.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.Location = new System.Drawing.Point(163, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 19);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Cliente:";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.Location = new System.Drawing.Point(295, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 32);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Guardar Cambios";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // buttonIngresar
-            // 
-            this.buttonIngresar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonIngresar.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.Location = new System.Drawing.Point(295, 56);
-            this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(188, 32);
-            this.buttonIngresar.TabIndex = 18;
-            this.buttonIngresar.Text = "Consultar";
-            this.buttonIngresar.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -113,110 +64,115 @@
             this.label5.TabIndex = 36;
             this.label5.Text = "Correo electrónico:";
             // 
-            // label4
+            // gridDatos
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label4.Location = new System.Drawing.Point(404, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 19);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "Teléfono:";
+            this.gridDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDatos.Location = new System.Drawing.Point(67, 73);
+            this.gridDatos.Name = "gridDatos";
+            this.gridDatos.RowTemplate.Height = 25;
+            this.gridDatos.Size = new System.Drawing.Size(648, 166);
+            this.gridDatos.TabIndex = 47;
+            this.gridDatos.DoubleClick += new System.EventHandler(this.gridDatos_DoubleClick);
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox2.Location = new System.Drawing.Point(251, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(364, 26);
-            this.textBox2.TabIndex = 33;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label1.Location = new System.Drawing.Point(522, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 19);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Telefono:";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.BackColor = System.Drawing.Color.LightCyan;
+            this.txtTelefono.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTelefono.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtTelefono.Location = new System.Drawing.Point(606, 9);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(148, 26);
+            this.txtTelefono.TabIndex = 45;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.BackColor = System.Drawing.Color.LightCyan;
+            this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDireccion.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtDireccion.Location = new System.Drawing.Point(122, 41);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(243, 26);
+            this.txtDireccion.TabIndex = 44;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label3.Location = new System.Drawing.Point(147, 177);
+            this.label3.Location = new System.Drawing.Point(18, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 19);
-            this.label3.TabIndex = 32;
+            this.label3.TabIndex = 43;
             this.label3.Text = "Dirección:";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox1.Location = new System.Drawing.Point(251, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(364, 26);
-            this.textBox1.TabIndex = 31;
+            this.txtNombre.BackColor = System.Drawing.Color.LightCyan;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNombre.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtNombre.Location = new System.Drawing.Point(340, 9);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(167, 26);
+            this.txtNombre.TabIndex = 42;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label2.Location = new System.Drawing.Point(156, 138);
+            this.label2.Location = new System.Drawing.Point(257, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 19);
-            this.label2.TabIndex = 30;
+            this.label2.TabIndex = 41;
             this.label2.Text = "Nombre:";
             // 
-            // textemail
+            // txtDocumento
             // 
-            this.textemail.BackColor = System.Drawing.Color.LightCyan;
-            this.textemail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textemail.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textemail.Location = new System.Drawing.Point(187, 94);
-            this.textemail.Name = "textemail";
-            this.textemail.Size = new System.Drawing.Size(186, 26);
-            this.textemail.TabIndex = 29;
+            this.txtDocumento.BackColor = System.Drawing.Color.LightCyan;
+            this.txtDocumento.Enabled = false;
+            this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDocumento.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtDocumento.Location = new System.Drawing.Point(122, 9);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(129, 26);
+            this.txtDocumento.TabIndex = 40;
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label6.Location = new System.Drawing.Point(66, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 19);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Documento:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label4.Location = new System.Drawing.Point(12, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 19);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Documento:";
             // 
-            // textBox3
+            // buttonGuardar
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox3.Location = new System.Drawing.Point(499, 94);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 26);
-            this.textBox3.TabIndex = 38;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox5.Location = new System.Drawing.Point(251, 212);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(364, 26);
-            this.textBox5.TabIndex = 40;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label7.Location = new System.Drawing.Point(78, 215);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(156, 19);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Correo electrónico:";
+            this.buttonGuardar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGuardar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonGuardar.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonGuardar.Location = new System.Drawing.Point(296, 249);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(188, 32);
+            this.buttonGuardar.TabIndex = 38;
+            this.buttonGuardar.Text = "Guardar Cambios";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // ModificarCliente
             // 
@@ -224,47 +180,40 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.gridDatos);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtTelefono);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textemail);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificarCliente";
             this.Text = "ModificarCliente";
+            this.Load += new System.EventHandler(this.ModificarCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private ComboBox comboBox1;
-        private Label label1;
-        private Button button1;
-        private Button buttonIngresar;
         private TextBox textBox4;
         private Label label5;
-        private Label label4;
-        private TextBox textBox2;
+        private DataGridView gridDatos;
+        private Label label1;
+        private TextBox txtTelefono;
+        private TextBox txtDireccion;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtNombre;
         private Label label2;
-        private TextBox textemail;
-        private Label label6;
-        private TextBox textBox3;
-        private TextBox textBox5;
-        private Label label7;
+        private TextBox txtDocumento;
+        private Label label4;
+        private Button buttonGuardar;
     }
 }

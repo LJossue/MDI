@@ -15,6 +15,8 @@ namespace CapaPresentacion
 {
     public partial class IngresarProducto : Form
     {
+        CE ce = new CE();
+        CN cn = new CN();
         public IngresarProducto()
         {
             InitializeComponent();
@@ -27,8 +29,7 @@ namespace CapaPresentacion
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-            CE ce = new CE();
-            CN cn = new CN();
+            
             ce.Codigo = int.Parse(txtCodigo.Text);
             ce.Descripcion = txtDescripcion.Text;
             ce.Valor = int.Parse(txtValor.Text);

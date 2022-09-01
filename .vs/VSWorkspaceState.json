@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CapaDatos",
     "\\CapaPresentacion"
   ],
-  "SelectedNode": "\\CapaPresentacion\\ConsultarProducto.cs",
+  "SelectedNode": "\\CapaPresentacion\\Ingresar Cliente.cs",
   "PreviewInSolutionExplorer": false
 }

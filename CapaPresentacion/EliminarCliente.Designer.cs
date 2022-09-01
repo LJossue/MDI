@@ -28,43 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gridDatos = new System.Windows.Forms.DataGridView();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.buttonEliminar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonIngresar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // txtNombre
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(251, 22);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(362, 23);
-            this.comboBox1.TabIndex = 14;
+            this.txtNombre.BackColor = System.Drawing.Color.LightCyan;
+            this.txtNombre.Enabled = false;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNombre.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtNombre.Location = new System.Drawing.Point(436, 23);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(256, 26);
+            this.txtNombre.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label2.Location = new System.Drawing.Point(353, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Nombre:";
+            // 
+            // gridDatos
+            // 
+            this.gridDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDatos.Location = new System.Drawing.Point(74, 105);
+            this.gridDatos.Name = "gridDatos";
+            this.gridDatos.RowTemplate.Height = 25;
+            this.gridDatos.Size = new System.Drawing.Size(618, 173);
+            this.gridDatos.TabIndex = 27;
+            this.gridDatos.DoubleClick += new System.EventHandler(this.gridDatos_DoubleClick);
+            // 
+            // txtDocumento
+            // 
+            this.txtDocumento.BackColor = System.Drawing.Color.LightCyan;
+            this.txtDocumento.Enabled = false;
+            this.txtDocumento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDocumento.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtDocumento.Location = new System.Drawing.Point(184, 23);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(138, 26);
+            this.txtDocumento.TabIndex = 26;
+            // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonEliminar.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonEliminar.Location = new System.Drawing.Point(309, 65);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(188, 32);
+            this.buttonEliminar.TabIndex = 25;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.Location = new System.Drawing.Point(163, 22);
+            this.label1.Location = new System.Drawing.Point(74, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 19);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Cliente:";
-            // 
-            // buttonIngresar
-            // 
-            this.buttonIngresar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonIngresar.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.Location = new System.Drawing.Point(298, 65);
-            this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(188, 32);
-            this.buttonIngresar.TabIndex = 20;
-            this.buttonIngresar.Text = "Eliminar";
-            this.buttonIngresar.UseVisualStyleBackColor = true;
+            this.label1.Size = new System.Drawing.Size(104, 19);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Documento:";
             // 
             // EliminarCliente
             // 
@@ -72,12 +112,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
-            this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.gridDatos);
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EliminarCliente";
             this.Text = "EliminarCliente";
+            this.Load += new System.EventHandler(this.EliminarCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -85,8 +130,11 @@
 
         #endregion
 
-        private ComboBox comboBox1;
+        public TextBox txtNombre;
+        private Label label2;
+        private DataGridView gridDatos;
+        public TextBox txtDocumento;
+        private Button buttonEliminar;
         private Label label1;
-        private Button buttonIngresar;
     }
 }

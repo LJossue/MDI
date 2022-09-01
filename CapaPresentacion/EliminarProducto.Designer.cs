@@ -28,43 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonIngresar = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.gridDatos = new System.Windows.Forms.DataGridView();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(254, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(362, 23);
-            this.comboBox1.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.label1.Location = new System.Drawing.Point(156, 24);
+            this.label1.Location = new System.Drawing.Point(70, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 19);
+            this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Producto:";
+            this.label1.Text = "Codigo:";
             // 
-            // buttonIngresar
+            // buttonEliminar
             // 
-            this.buttonIngresar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonIngresar.ForeColor = System.Drawing.Color.DarkSeaGreen;
-            this.buttonIngresar.Location = new System.Drawing.Point(298, 65);
-            this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(188, 32);
-            this.buttonIngresar.TabIndex = 19;
-            this.buttonIngresar.Text = "Eliminar";
-            this.buttonIngresar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.FlatAppearance.BorderColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonEliminar.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonEliminar.Location = new System.Drawing.Point(298, 65);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(188, 32);
+            this.buttonEliminar.TabIndex = 19;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCodigo.Enabled = false;
+            this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCodigo.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtCodigo.Location = new System.Drawing.Point(147, 23);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(91, 26);
+            this.txtCodigo.TabIndex = 20;
+            // 
+            // gridDatos
+            // 
+            this.gridDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridDatos.Location = new System.Drawing.Point(70, 105);
+            this.gridDatos.Name = "gridDatos";
+            this.gridDatos.RowTemplate.Height = 25;
+            this.gridDatos.Size = new System.Drawing.Size(626, 173);
+            this.gridDatos.TabIndex = 21;
+            this.gridDatos.DoubleClick += new System.EventHandler(this.gridDatos_DoubleClick);
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.BackColor = System.Drawing.Color.LightCyan;
+            this.txtNombre.Enabled = false;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNombre.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtNombre.Location = new System.Drawing.Point(440, 23);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(256, 26);
+            this.txtNombre.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label2.Location = new System.Drawing.Point(357, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Nombre:";
             // 
             // EliminarProducto
             // 
@@ -72,21 +112,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
-            this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.gridDatos);
+            this.Controls.Add(this.txtCodigo);
+            this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EliminarProducto";
             this.Text = "EliminarProducto";
+            this.Load += new System.EventHandler(this.EliminarProducto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private ComboBox comboBox1;
         private Label label1;
-        private Button buttonIngresar;
+        private Button buttonEliminar;
+        public TextBox txtCodigo;
+        private DataGridView gridDatos;
+        public TextBox txtNombre;
+        private Label label2;
     }
 }

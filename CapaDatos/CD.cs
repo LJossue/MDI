@@ -39,7 +39,7 @@ namespace CapaDatos
             mySqlConnection.Close();
         }
 
-        public DataSet Listar()
+        public DataSet ListarProductos()
         {
             MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
             mySqlConnection.Open();
@@ -52,5 +52,65 @@ namespace CapaDatos
             return dataSet;
 
         }
+
+        public DataSet ListarClientes()
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
+            mySqlConnection.Open();
+            string Query = "select * from `clientes` limit 1000";
+            MySqlDataAdapter Adaptador;
+            DataSet dataSet = new DataSet();
+
+            Adaptador = new MySqlDataAdapter(Query, mySqlConnection);
+            Adaptador.Fill(dataSet, "tbl");
+            return dataSet;
+
+        }
+        public void EditarProductos(CE ce)
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
+            mySqlConnection.Open();
+            string Query = "UPDATE `productos` SET `proDescripción`= '"+ ce.Descripcion +"', `proValor`= '"+ ce.Valor +"', `proCantidad`= '"+ ce.Cantidad + "' WHERE `proCodigo` = " + ce.Codigo +";";
+            MySqlCommand mySqlCommand = new MySqlCommand(Query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            mySqlConnection.Close();
+            MessageBox.Show("Producto Actualizado.");
+
+        }
+        public void EditarClientes(CE ce)
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
+            mySqlConnection.Open();
+            string Query = "UPDATE `clientes` SET `cliNombre`= '" + ce.Nombre + "', `cliTelefono`= '" + ce.Telefono + "', `cliDirección`= '" + ce.Direccion + "' WHERE `cliDocumento` = " + ce.Documento + ";";
+            MySqlCommand mySqlCommand = new MySqlCommand(Query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            mySqlConnection.Close();
+            MessageBox.Show("Cliente Actualizado.");
+
+        }
+
+        public void EliminarProductos(CE ce)
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
+            mySqlConnection.Open();
+            string Query = "Delete from `productos` where `proCodigo` ="+ ce.Codigo + ";";
+            MySqlCommand mySqlCommand = new MySqlCommand(Query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            mySqlConnection.Close();
+            MessageBox.Show("Producto Eliminado.");
+
+        }
+        public void EliminarClientes(CE ce)
+        {
+            MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
+            mySqlConnection.Open();
+            string Query = "Delete from `clientes` where `cliDocumento` =" + ce.Documento + ";";
+            MySqlCommand mySqlCommand = new MySqlCommand(Query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            mySqlConnection.Close();
+            MessageBox.Show("Cliente Eliminado.");
+
+        }
+
     }
 }

@@ -37,7 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textemail = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -49,6 +48,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
@@ -140,16 +140,6 @@
             this.textemail.Name = "textemail";
             this.textemail.Size = new System.Drawing.Size(210, 26);
             this.textemail.TabIndex = 18;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox1.Location = new System.Drawing.Point(497, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 26);
-            this.textBox1.TabIndex = 20;
             // 
             // label4
             // 
@@ -267,12 +257,24 @@
             this.panel1.Size = new System.Drawing.Size(801, 13);
             this.panel1.TabIndex = 30;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.SeaGreen;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.LightCyan;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Location = new System.Drawing.Point(487, 107);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(221, 23);
+            this.dateTimePicker1.TabIndex = 31;
+            // 
             // Facturar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
@@ -283,7 +285,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textemail);
             this.Controls.Add(this.label3);
@@ -314,7 +315,6 @@
         private Label label1;
         private Label label3;
         private TextBox textemail;
-        private TextBox textBox1;
         private Label label4;
         private Label label5;
         private ComboBox comboBox2;
@@ -326,5 +326,6 @@
         private TextBox textBox3;
         private Label label7;
         private Panel panel1;
+        private DateTimePicker dateTimePicker1;
     }
 }

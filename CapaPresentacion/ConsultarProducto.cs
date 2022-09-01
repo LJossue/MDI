@@ -7,15 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaDatos;
+using MySql.Data.MySqlClient;
 using CapaNegocio;
 using CapaEntidad;
+using CapaDatos;
+
+
 
 namespace CapaPresentacion
 {
+
     public partial class ConsultarProducto : Form
     {
-        CN cn = new CN();   
+        string CadenaConexion = "server=localhost;User=root;Password=admin;Port=3306;database=naturvida;";
+
+        CE ce = new CE();
+        CN cn = new CN();
         public ConsultarProducto()
         {
             InitializeComponent();
@@ -24,7 +31,24 @@ namespace CapaPresentacion
         private void ConsultarProducto_Load(object sender, EventArgs e)
         {
             gridDatos.DataSource = cn.ObtenerDatosPro().Tables["tbl"];
-            comboBox.DataSource = cn.ObtenerDatosPro().Tables["tbl"];
+            
+        }
+
+     
+
+        private void buttonConsulta_Click(object sender, EventArgs e)
+        {
+            ce.Consultar1 = txtconsulta.Text;
+            MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
+            mySqlConnection.Open();
+            string Query = "select * from productos where proDescripción LIKE ('" + ce.Consultar1 + "%')";
+            MySqlCommand mySqlCommand = new MySqlCommand(Query, mySqlConnection);
+            mySqlCommand.ExecuteNonQuery();
+            DataTable dataTable = new DataTable();
+            MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(mySqlCommand);
+            mySqlDataAdapter.Fill(dataTable);
+            gridDatos.DataSource = dataTable;
+            mySqlConnection.Close();
         }
     }
 }

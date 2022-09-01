@@ -11,9 +11,9 @@ namespace CapaNegocio
 {
     public class CN
     {
-        
+
         CD cd = new CD();
-        
+
         public void CrearCliente(CE ce)
         {
             cd.CrearCli(ce);
@@ -24,7 +24,28 @@ namespace CapaNegocio
         }
         public DataSet ObtenerDatosPro()
         {
-            return cd.Listar();
+            return cd.ListarProductos();
         }
+        public DataSet ObtenerDatosCli()
+        {
+            return cd.ListarClientes();
+        }
+        public void EditarPro(CE ce)
+        {
+            cd.EditarProductos(ce);
+        }
+        public void EditarCli(CE ce)
+        {
+            cd.EditarClientes(ce);
+        }
+        public void EliminarPro(CE ce)
+        {
+            cd.EliminarProductos(ce);
+        }
+        public void EliminarCli(CE ce)
+        {
+            cd.EliminarClientes(ce);
+        }
+
     }
 }
