@@ -40,6 +40,8 @@
             this.txtDocumento = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonGuardar = new System.Windows.Forms.Button();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,12 +176,35 @@
             this.buttonGuardar.UseVisualStyleBackColor = true;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
+            // txtCorreo
+            // 
+            this.txtCorreo.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCorreo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCorreo.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtCorreo.Location = new System.Drawing.Point(500, 41);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(243, 26);
+            this.txtCorreo.TabIndex = 49;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label6.Location = new System.Drawing.Point(419, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 19);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "Correo:";
+            // 
             // ModificarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(776, 290);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.gridDatos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTelefono);
@@ -215,5 +240,7 @@
         private TextBox txtDocumento;
         private Label label4;
         private Button buttonGuardar;
+        private TextBox txtCorreo;
+        private Label label6;
     }
 }

@@ -33,22 +33,22 @@
             this.btnminus = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboCliente = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textemail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboProducto = new System.Windows.Forms.ComboBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.buttonIngresar = new System.Windows.Forms.Button();
+            this.buttonAgregar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.buttonTerminar = new System.Windows.Forms.Button();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboVendedor = new System.Windows.Forms.ComboBox();
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
@@ -100,25 +100,25 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Facturación";
             // 
-            // comboBox1
+            // comboCliente
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.LightCyan;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(138, 141);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(569, 23);
-            this.comboBox1.TabIndex = 16;
+            this.comboCliente.BackColor = System.Drawing.Color.LightCyan;
+            this.comboCliente.FormattingEnabled = true;
+            this.comboCliente.Location = new System.Drawing.Point(138, 141);
+            this.comboCliente.Name = "comboCliente";
+            this.comboCliente.Size = new System.Drawing.Size(569, 23);
+            this.comboCliente.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(45, 107);
+            this.label1.Location = new System.Drawing.Point(34, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 19);
+            this.label1.Size = new System.Drawing.Size(91, 19);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Numero:";
+            this.label1.Text = "Vendedor:";
             // 
             // label3
             // 
@@ -131,22 +131,12 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Clientes:";
             // 
-            // textemail
-            // 
-            this.textemail.BackColor = System.Drawing.Color.LightCyan;
-            this.textemail.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textemail.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textemail.Location = new System.Drawing.Point(138, 104);
-            this.textemail.Name = "textemail";
-            this.textemail.Size = new System.Drawing.Size(210, 26);
-            this.textemail.TabIndex = 18;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label4.Location = new System.Drawing.Point(410, 107);
+            this.label4.Location = new System.Drawing.Point(418, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 19);
             this.label4.TabIndex = 19;
@@ -163,24 +153,24 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Productos:";
             // 
-            // comboBox2
+            // comboProducto
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.LightCyan;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(138, 179);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(284, 23);
-            this.comboBox2.TabIndex = 21;
+            this.comboProducto.BackColor = System.Drawing.Color.LightCyan;
+            this.comboProducto.FormattingEnabled = true;
+            this.comboProducto.Location = new System.Drawing.Point(138, 179);
+            this.comboProducto.Name = "comboProducto";
+            this.comboProducto.Size = new System.Drawing.Size(284, 23);
+            this.comboProducto.TabIndex = 21;
             // 
-            // textBox2
+            // txtCantidad
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox2.Location = new System.Drawing.Point(138, 217);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 26);
-            this.textBox2.TabIndex = 24;
+            this.txtCantidad.BackColor = System.Drawing.Color.LightCyan;
+            this.txtCantidad.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCantidad.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtCantidad.Location = new System.Drawing.Point(138, 217);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(210, 26);
+            this.txtCantidad.TabIndex = 24;
             // 
             // label6
             // 
@@ -193,18 +183,19 @@
             this.label6.TabIndex = 23;
             this.label6.Text = "Cantidad:";
             // 
-            // buttonIngresar
+            // buttonAgregar
             // 
-            this.buttonIngresar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.buttonIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonIngresar.ForeColor = System.Drawing.Color.SeaGreen;
-            this.buttonIngresar.Location = new System.Drawing.Point(507, 197);
-            this.buttonIngresar.Name = "buttonIngresar";
-            this.buttonIngresar.Size = new System.Drawing.Size(200, 42);
-            this.buttonIngresar.TabIndex = 25;
-            this.buttonIngresar.Text = "Agregar Producto";
-            this.buttonIngresar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.buttonAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAgregar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.buttonAgregar.Location = new System.Drawing.Point(507, 197);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(200, 42);
+            this.buttonAgregar.TabIndex = 25;
+            this.buttonAgregar.Text = "Agregar Producto";
+            this.buttonAgregar.UseVisualStyleBackColor = true;
+
             // 
             // dataGridView1
             // 
@@ -215,28 +206,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(630, 110);
             this.dataGridView1.TabIndex = 26;
             // 
-            // button1
+            // buttonTerminar
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.button1.Location = new System.Drawing.Point(77, 384);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 42);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Terminar Factura";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonTerminar.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
+            this.buttonTerminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTerminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonTerminar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.buttonTerminar.Location = new System.Drawing.Point(77, 384);
+            this.buttonTerminar.Name = "buttonTerminar";
+            this.buttonTerminar.Size = new System.Drawing.Size(200, 42);
+            this.buttonTerminar.TabIndex = 27;
+            this.buttonTerminar.Text = "Terminar Factura";
+            this.buttonTerminar.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtTotal
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LightCyan;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.textBox3.Location = new System.Drawing.Point(498, 393);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(210, 26);
-            this.textBox3.TabIndex = 29;
+            this.txtTotal.BackColor = System.Drawing.Color.LightCyan;
+            this.txtTotal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTotal.ForeColor = System.Drawing.Color.SeaGreen;
+            this.txtTotal.Location = new System.Drawing.Point(498, 393);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(210, 26);
+            this.txtTotal.TabIndex = 29;
             // 
             // label7
             // 
@@ -263,10 +254,19 @@
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.SeaGreen;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.LightCyan;
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Location = new System.Drawing.Point(487, 107);
+            this.dateTimePicker1.Location = new System.Drawing.Point(486, 103);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(221, 23);
             this.dateTimePicker1.TabIndex = 31;
+            // 
+            // comboVendedor
+            // 
+            this.comboVendedor.BackColor = System.Drawing.Color.LightCyan;
+            this.comboVendedor.FormattingEnabled = true;
+            this.comboVendedor.Location = new System.Drawing.Point(138, 103);
+            this.comboVendedor.Name = "comboVendedor";
+            this.comboVendedor.Size = new System.Drawing.Size(266, 23);
+            this.comboVendedor.TabIndex = 32;
             // 
             // Facturar
             // 
@@ -274,21 +274,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboVendedor);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonTerminar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonIngresar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.buttonAgregar);
+            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboProducto);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textemail);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TitleBar);
             this.Controls.Add(this.label2);
@@ -311,21 +311,21 @@
         private PictureBox btnminus;
         private PictureBox btnclose;
         private Label label2;
-        private ComboBox comboBox1;
+        private ComboBox comboCliente;
         private Label label1;
         private Label label3;
-        private TextBox textemail;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox2;
-        private TextBox textBox2;
+        private ComboBox comboProducto;
+        private TextBox txtCantidad;
         private Label label6;
-        private Button buttonIngresar;
+        private Button buttonAgregar;
         private DataGridView dataGridView1;
-        private Button button1;
-        private TextBox textBox3;
+        private Button buttonTerminar;
+        private TextBox txtTotal;
         private Label label7;
         private Panel panel1;
         private DateTimePicker dateTimePicker1;
+        private ComboBox comboVendedor;
     }
 }

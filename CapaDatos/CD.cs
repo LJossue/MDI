@@ -81,7 +81,7 @@ namespace CapaDatos
         {
             MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
             mySqlConnection.Open();
-            string Query = "UPDATE `clientes` SET `cliNombre`= '" + ce.Nombre + "', `cliTelefono`= '" + ce.Telefono + "', `cliDirección`= '" + ce.Direccion + "' WHERE `cliDocumento` = " + ce.Documento + ";";
+            string Query = "UPDATE `clientes` SET `cliNombre`= '" + ce.Nombre + "', `cliTelefono`= '" + ce.Telefono + "', `cliDirección`= '" + ce.Direccion + "', `cliCorreo`= '"+ ce.Correo +"' WHERE `cliDocumento` = " + ce.Documento + ";";
             MySqlCommand mySqlCommand = new MySqlCommand(Query, mySqlConnection);
             mySqlCommand.ExecuteNonQuery();
             mySqlConnection.Close();

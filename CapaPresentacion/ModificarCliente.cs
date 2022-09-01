@@ -30,8 +30,9 @@ namespace CapaPresentacion
         {
             ce.Documento = int.Parse(txtDocumento.Text);
             ce.Nombre = txtNombre.Text;
-            ce.Telefono = int.Parse(txtTelefono.Text);
+            ce.Telefono = long.Parse(txtTelefono.Text);
             ce.Direccion = txtDireccion.Text;
+            ce.Correo = txtCorreo.Text;
             cn.EditarCli(ce);
             CargarDatos();
         }
@@ -47,6 +48,7 @@ namespace CapaPresentacion
             txtNombre.Text = gridDatos.CurrentRow.Cells["cliNombre"].Value.ToString();
             txtTelefono.Text = gridDatos.CurrentRow.Cells["cliTelefono"].Value.ToString();
             txtDireccion.Text = gridDatos.CurrentRow.Cells["cliDirección"].Value.ToString();
+            txtCorreo.Text = gridDatos.CurrentRow.Cells["cliCorreo"].Value.ToString();
         }
     }
 }

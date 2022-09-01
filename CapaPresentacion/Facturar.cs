@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDatos;
+using CapaEntidad;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
     public partial class Facturar : Form
     {
+        CD cd = new CD();
         public Facturar()
         {
             InitializeComponent();
@@ -26,5 +30,6 @@ namespace CapaPresentacion
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
     }
 }
