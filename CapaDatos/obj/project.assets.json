@@ -861,19 +861,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sena\\.nuget\\packages\\": {}
+    "C:\\Users\\leand\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaDatos\\CapaDatos.csproj",
+      "projectUniqueName": "C:\\Users\\leand\\source\\repos\\Naturvida\\CapaDatos\\CapaDatos.csproj",
       "projectName": "CapaDatos",
-      "projectPath": "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaDatos\\CapaDatos.csproj",
-      "packagesPath": "C:\\Users\\Sena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaDatos\\obj\\",
+      "projectPath": "C:\\Users\\leand\\source\\repos\\Naturvida\\CapaDatos\\CapaDatos.csproj",
+      "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leand\\source\\repos\\Naturvida\\CapaDatos\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -887,8 +892,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaEntidad\\CapaEntidad.csproj": {
-              "projectPath": "C:\\Users\\Sena\\Source\\Repos\\MDI\\CapaEntidad\\CapaEntidad.csproj"
+            "C:\\Users\\leand\\source\\repos\\Naturvida\\CapaEntidad\\CapaEntidad.csproj": {
+              "projectPath": "C:\\Users\\leand\\source\\repos\\Naturvida\\CapaEntidad\\CapaEntidad.csproj"
             }
           }
         }
@@ -926,7 +931,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,6 +13,7 @@ namespace CapaPresentacion
     {
         
         CN cn = new CN();   
+        CE ce = new CE();
         public Login()
         {
             InitializeComponent();
@@ -62,6 +63,8 @@ namespace CapaPresentacion
         //boton login
         private void button1_Click(object sender, EventArgs e)
         {
+            ce.Usuario = textemail.Text;
+            ce.Contraseña = textpassword.Text;
            ValidarCampos();
            
             
@@ -85,9 +88,8 @@ namespace CapaPresentacion
                 return;
 
             }
-            MySqlCommand command = new MySqlCommand("SELECT venUsuario, venContraseña from vendedores WHERE venUsuario = @vusuario AND venContraseña = @vcontraseña", mySqlConnection);
-            command.Parameters.AddWithValue("@vusuario", textemail.Text);
-            command.Parameters.AddWithValue("@vcontraseña", textpassword.Text);
+            MySqlCommand command = new MySqlCommand("SELECT venUsuario, venContraseña from vendedores WHERE venUsuario = '"+ ce.Usuario +"' AND venContraseña = '"+ce.Contraseña+"'", mySqlConnection);
+            
 
             MySqlDataReader lector = command.ExecuteReader();
             

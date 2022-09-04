@@ -66,6 +66,7 @@ namespace CapaDatos
             return dataSet;
 
         }
+
         public void EditarProductos(CE ce)
         {
             MySqlConnection mySqlConnection = new MySqlConnection(CadenaConexion);
@@ -110,6 +111,85 @@ namespace CapaDatos
             mySqlConnection.Close();
             MessageBox.Show("Cliente Eliminado.");
 
+        }
+
+        public DataTable ListarFacClientes(CE ce)
+        {
+            var tabla = new DataTable();
+            try
+            {
+                using (var adaptador = new MySqlDataAdapter("select cliDocumento, cliNombre from clientes", CadenaConexion))
+                {
+                    adaptador.SelectCommand.CommandType = CommandType.Text;
+                    adaptador.Fill(tabla);
+                }
+
+            }
+            catch (MySqlException e)
+            {
+
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+            return tabla;
+        }
+        public DataTable ListarFacProductos(CE ce)
+        {
+            var tabla = new DataTable();
+            try
+            {
+                using (var adaptador = new MySqlDataAdapter("select proCodigo, proDescripción from productos", CadenaConexion))
+                {
+                    adaptador.SelectCommand.CommandType = CommandType.Text;
+                    adaptador.Fill(tabla);
+                }
+
+            }
+            catch (MySqlException e)
+            {
+
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+            return tabla;
+        }
+        public DataTable ListarFacVendedores(CE ce)
+        {
+            var tabla = new DataTable();
+            try
+            {
+                using (var adaptador = new MySqlDataAdapter("select venId, venUsuario from vendedores", CadenaConexion))
+                {
+                    adaptador.SelectCommand.CommandType = CommandType.Text;
+                    adaptador.Fill(tabla);
+                }
+
+            }
+            catch (MySqlException e)
+            {
+
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+            return tabla;
+        }
+        public int ConsultarPrecio(int Codigo)
+        {
+            int Precio = 0;
+            DataTable tabla = new DataTable();
+            try
+            {
+                using (var adaptador = new MySqlDataAdapter("select proValor from productos where proCodigo=" + Codigo, CadenaConexion))
+                {
+                    adaptador.SelectCommand.CommandType = CommandType.Text;
+                    adaptador.Fill(tabla);
+                    Precio = Convert.ToInt16(tabla.Rows[0][0]);
+                }
+
+            }
+            catch (MySqlException e)
+            {
+
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+            return Precio;
         }
 
     }

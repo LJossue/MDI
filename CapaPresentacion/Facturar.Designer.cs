@@ -42,7 +42,11 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonAgregar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridFact = new System.Windows.Forms.DataGridView();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonTerminar = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,7 +56,7 @@
             this.TitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridFact)).BeginInit();
             this.SuspendLayout();
             // 
             // TitleBar
@@ -107,7 +111,7 @@
             this.comboCliente.Location = new System.Drawing.Point(138, 141);
             this.comboCliente.Name = "comboCliente";
             this.comboCliente.Size = new System.Drawing.Size(569, 23);
-            this.comboCliente.TabIndex = 16;
+            this.comboCliente.TabIndex = 33;
             // 
             // label1
             // 
@@ -195,16 +199,42 @@
             this.buttonAgregar.TabIndex = 25;
             this.buttonAgregar.Text = "Agregar Producto";
             this.buttonAgregar.UseVisualStyleBackColor = true;
-
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
-            // dataGridView1
+            // gridFact
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(77, 249);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(630, 110);
-            this.dataGridView1.TabIndex = 26;
+            this.gridFact.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridFact.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridFact.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
+            this.Producto,
+            this.Cantidad,
+            this.Valor});
+            this.gridFact.Location = new System.Drawing.Point(77, 249);
+            this.gridFact.Name = "gridFact";
+            this.gridFact.RowTemplate.Height = 25;
+            this.gridFact.Size = new System.Drawing.Size(630, 110);
+            this.gridFact.TabIndex = 26;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.Name = "Producto";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
             // 
             // buttonTerminar
             // 
@@ -218,6 +248,7 @@
             this.buttonTerminar.TabIndex = 27;
             this.buttonTerminar.Text = "Terminar Factura";
             this.buttonTerminar.UseVisualStyleBackColor = true;
+            this.buttonTerminar.Click += new System.EventHandler(this.buttonTerminar_Click);
             // 
             // txtTotal
             // 
@@ -253,7 +284,9 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.SeaGreen;
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.LightCyan;
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(486, 103);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(221, 23);
@@ -280,7 +313,7 @@
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonTerminar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridFact);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label6);
@@ -296,10 +329,11 @@
             this.Name = "Facturar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturar";
+            this.Load += new System.EventHandler(this.Facturar_Load);
             this.TitleBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnminus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnclose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridFact)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,12 +354,16 @@
         private TextBox txtCantidad;
         private Label label6;
         private Button buttonAgregar;
-        private DataGridView dataGridView1;
+        private DataGridView gridFact;
         private Button buttonTerminar;
         private TextBox txtTotal;
         private Label label7;
         private Panel panel1;
         private DateTimePicker dateTimePicker1;
         private ComboBox comboVendedor;
+        private DataGridViewTextBoxColumn Codigo;
+        private DataGridViewTextBoxColumn Producto;
+        private DataGridViewTextBoxColumn Cantidad;
+        private DataGridViewTextBoxColumn Valor;
     }
 }

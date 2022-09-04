@@ -8,6 +8,8 @@ namespace CapaEntidad
 {
     public class CE
     {
+
+
         //Cliente
         public int Documento { get; set; }
         public string Nombre { get; set; }
@@ -24,5 +26,10 @@ namespace CapaEntidad
         public int Cantidad { get; set; }
 
         public string Consultar1 { get; set; }
+
+        //Vendedor
+        public string Usuario { get; set; }
+        public string Contraseña { get; set; }
     }
+
 }

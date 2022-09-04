@@ -127,9 +127,9 @@
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(123, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 19);
+            this.label1.Size = new System.Drawing.Size(65, 19);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Correo electronico";
+            this.label1.Text = "Usuario";
             // 
             // textemail
             // 

@@ -46,6 +46,21 @@ namespace CapaNegocio
         {
             cd.EliminarClientes(ce);
         }
-
+        public DataTable DatosFacCli(CE ce)
+        {
+           return cd.ListarFacClientes(ce);
+        }
+        public DataTable DatosFacPro(CE ce)
+        {
+            return cd.ListarFacProductos(ce);
+        }
+        public DataTable DatosFacVen(CE ce)
+        {
+            return cd.ListarFacVendedores(ce);
+        }
+        public int ConsultarPrecioPro(int Codigo)
+        {
+            return cd.ConsultarPrecio(Codigo);
+        }
     }
 }
